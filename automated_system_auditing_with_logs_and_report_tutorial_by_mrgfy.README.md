@@ -80,12 +80,6 @@ OnCalendar=*-*-* 03:00:00
 ```
 Just check your logs and/or root user alerts to review lynis audit results.
 
-####################
-#                  #
-# #####  #   ###   #
-#   #    #   ###   #
-#   #    #   #     #
-####################
 TIP You need to literaly create the timer file, then restart the daemon, open file again, copy bottom half to top half like normal with drop in systemd files.
 Restart the daemon again
 Open file again, add the time schedule, save, restart the daemon. 

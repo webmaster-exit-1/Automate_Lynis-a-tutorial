@@ -65,8 +65,10 @@ WantedBy=timers.target
 
 __Step 4.__
 Enable the timer
-Tell systemd you made changes: systemctl daemon-reload
-Enable and start the timer (so no reboot is needed): systemctl enable --now lynis.timer
+Tell systemd you made changes: 
+```systemctl daemon-reload```
+Enable and start the timer (so no reboot is needed): 
+```systemctl enable --now lynis.timer```
 
 __Step 5.__ 
 Optional - Customize

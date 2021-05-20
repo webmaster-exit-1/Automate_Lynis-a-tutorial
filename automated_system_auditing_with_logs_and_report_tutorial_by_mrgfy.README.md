@@ -82,7 +82,7 @@ Note: set the timer by first resetting it, then set the preferred value
 ```
 [Timer]
 OnCalendar=
-OnCalendar=*-*-* 03:00:00
+OnCalendar=*-*-* (or) 03:00:00
 ```
 Just check your logs and/or root user alerts to review lynis audit results.
 

@@ -1,5 +1,5 @@
 ## Want to automate auditing your system's security with relative ease? 
-## Follow these simple steps, and you good to go.
+## Follow these simple steps, and you're good to go.
 
 __Step 1.__
 Install `lynis`

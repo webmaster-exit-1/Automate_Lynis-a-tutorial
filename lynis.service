@@ -1,0 +1,25 @@
+#################################################################################
+#
+# Lynis service file for systemd
+#
+#################################################################################
+# Do not remove, so Lynis can provide a hint when a newer unit is available
+# Generator=lynis
+# Version=1
+#################################################################################
+
+[Unit]
+Description=Security audit and vulnerability scanner
+Documentation=https://cisofy.com/docs/
+
+[Service]
+Nice=19
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+Type=simple
+ExecStart=/usr/bin/lynis audit system --cronjob
+
+[Install]
+WantedBy=multi-user.target
+
+#################################################################################

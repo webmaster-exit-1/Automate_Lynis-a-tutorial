@@ -1,0 +1,22 @@
+#################################################################################
+#
+# Lynis timer file for systemd
+#
+#################################################################################
+# Do not remove, so Lynis can provide a hint when a newer unit is available
+# Generator=lynis
+# Version=1
+#################################################################################
+
+[Unit]
+Description=Daily timer for the Lynis security audit and vulnerability scanner
+
+[Timer]
+OnCalendar=daily
+RandomizedDelaySec=1800
+Persistent=false
+
+[Install]
+WantedBy=timers.target
+
+#################################################################################
